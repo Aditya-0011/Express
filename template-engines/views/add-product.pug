@@ -1,0 +1,12 @@
+extends layouts/main-layout
+
+block styles
+    link(rel="stylesheet", href="/css/add-product.css")
+
+block content
+    main
+        form.product-form(action="/admin/add-product" method="POST")
+            .form-control
+                label(for="title") Title
+                input(type="text", name="title")#inputTitle
+            button.btn(type="submit") Add Product

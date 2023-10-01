@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ pageTitle }}</title>
+        {{#if productCSS}}
+            <link rel="stylesheet" href="/css/add-product.css">
+        {{ else }}
+            <link rel="stylesheet" href="/css/base.css">
+        {{/if}}
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-header__nav">
+                <ul class="main-header__item-list">
+                    <li class="main-header__item"><a class="{{#if activeShop }}active{{/if}}" href="/">Shop</a></li>
+                    <li class="main-header__item"><a class="{{#if activeAddProduct }}active{{/if}}" href="/admin/add-product">Add Product</a></li>
+                </ul>
+            </nav>
+        </header>
+        {{{ body }}}
+    </body>
+</html>
