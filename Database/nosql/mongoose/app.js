@@ -34,7 +34,7 @@ app.use(errorHandler.pageNotFound)
 
 mongoose
     .connect(
-        'mongodb+srv://aditya-0011:UaKTgAjKESgT0pMk@cluster0.gdrorud.mongodb.net/shop'
+        ''
         )
     .then(result => {
         // const user = new User({
