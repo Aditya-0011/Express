@@ -15,7 +15,7 @@ const User = require("./models/user");
 
 const app = express();
 const store = new mongoDbStore({
-  uri: "mongodb+srv://aditya-0011:UaKTgAjKESgT0pMk@cluster0.gdrorud.mongodb.net/shop",
+  uri: "",
   collection: "sessions",
 });
 const csrfProtection = csrf();
